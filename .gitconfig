@@ -1,0 +1,24 @@
+[pull]
+  rebase = true
+[github]
+	token = {YOUR_TOKEN}
+[user]
+	name = {YOUR_NAME}
+	email = {YOUR_EMAIL}
+[url "https://{YOUR_TOKEN}:x-oauth-basic@github.com/"]
+	insteadOf = https://github.com/
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    unstage = reset HEAD --
+    sdiff = diff --cached
+    pull = pull --rebase
+    undo = reset --soft HEAD~1
+    graph = log --graph --pretty=format:'%C(cyan)%h %C(bold green)(%ar) %C(reset)%s'
+    graph-all = log --graph --topo-order --decorate --oneline --all
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
